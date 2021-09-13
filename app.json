@@ -1,9 +1,9 @@
 {
-    "name": "TDMusicBot",
-    "logo": "https://telegra.ph/file/7ffa8d18b9b7f1b51a81e.jpg",
+    "name": "PrinceSmartMusic",
+    "logo": "https://telegra.ph/file/55ec00d5255f00ce0dbb1.jpg",
     "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
     "keywords": ["music", "voicechat", "telegram"],
-    "repository": "https://github.com/tofikdn/TDMusicBot",
+    "repository": "https://github.com/istinee/PrinceSmartMusic",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
