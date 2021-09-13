@@ -11,12 +11,12 @@ async def broadcast(_, message: Message):
     if message.from_user.id not in SUDO_USERS:
         return
 
-    wtf = await message.reply("`starting broadcast...`")
+    wtf = await message.reply("`Starting broadcast...`")
     if not message.reply_to_message:
-        await wtf.edit("please reply to a message to do broadcast!")
+        await wtf.edit("Please reply to a message to do broadcast!")
         return
     if not message.reply_to_message.text:
-        await wtf.edit("please reply to a message to do broadcast!")
+        await wtf.edit("Please reply to a message to do broadcast!")
         return
     lmao = message.reply_to_message.text
     sent=0
@@ -25,11 +25,11 @@ async def broadcast(_, message: Message):
         try:
             await USER.send_message(dialog.chat.id, lmao)
             sent += 1
-            await wtf.edit(f"`global cast...` \n\n**sent to:** `{sent}` chats \n**failed in:** {failed} chats")
+            await wtf.edit(f"`Global cast...` \n\n**Sent to:** `{sent}` chats \n**Failed in:** {failed} chats")
             await asyncio.sleep(2)
         except:
             failed += 1
                         #await wtf.edit(f"`broadcasting...` \n\n**sent to:** `{sent}` chats \n**failed in:** {failed} chats")
                         
 
-    await message.reply_text(f"`gcast succesfully` \n\n**sent to:** `{sent}` chats \n**failed in:** {failed} chats")
+    await message.reply_text(f"`Gcast succesfully` \n\n**Sent to:** `{sent}` chats \n**Failed in:** {failed} chats")
